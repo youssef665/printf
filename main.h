@@ -91,7 +91,7 @@ int print_address(va_list ap, params_t *params);
 int (*get_specifier(char *s))(va_list ap, params_t *params);
 int get_print_func(char *s, va_list ap, params_t *params);
 int get_flag(char *s, params_t *params);
-int get_modfier(char *s, params_t *params);
+int get_modifier(char *s, params_t *params);
 int *get_width(char *s, params_t *params, va_list ap);
 
 
@@ -103,7 +103,7 @@ int print_octal(va_list ap, params_t *params);
 
 /* simple_printers.c module */
 
-int print_form_to(char *start, char *stop, char *except);
+int print_from_to(char *start, char *stop, char *except);
 int print_rev(va_list ap, params_t *params);
 int print_rot13(va_list ap, params_t *params);
 
