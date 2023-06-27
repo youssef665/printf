@@ -106,7 +106,7 @@ int get_modifier(char *s, params_t *params)
 {
 	int m = 0;
 
-	switch(*s)
+	switch (*s)
 	{
 		case 'h':
 			m = params->h_modifier = 1;
