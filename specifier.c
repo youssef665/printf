@@ -106,7 +106,7 @@ int get_modifier(char *s, params_t *params)
 {
 	int m = 0;
 
-	swithc(*s)
+	switch(*s)
 	{
 		case 'h':
 			m = params->h_modifier = 1;
@@ -139,9 +139,9 @@ char *get_width(char *s, params_t *params, va_list ap)
 	else
 	{
 		while (_isdigit(*s))
-			d = d * 10 + (*s++ - '0');
+			k = k * 10 + (*s++ - '0');
 	}
-	params->width = d;
+	params->width = k;
 	return (s);
 }
 
