@@ -129,9 +129,9 @@ int get_modifier(char *s, params_t *params)
 
 char *get_width(char *s, params_t *params, va_list ap)
 {
-	int k;
+	int k = 0;
 
-	if (*s == '+')
+	if (*s == '*')
 	{
 		k = va_arg(ap, int);
 		s++;
