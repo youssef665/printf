@@ -42,7 +42,7 @@ int print_hex(va_list ap, params_t *params)
 int print_HEX(va_list ap, params_t *params)
 {
 	unsigned long l;
-	int c;
+	int c = 0;
 	char *str;
 
 	if (params->l_modifier)

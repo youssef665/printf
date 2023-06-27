@@ -62,7 +62,7 @@ int print_string(va_list ap, params_t *params)
 
 		j = pad = _strlen(str);
 		if (params->precision < pad)
-			j = pad = parmas->precision;
+			j = pad = params->precision;
 
 		if (params->minus_flag)
 		{
